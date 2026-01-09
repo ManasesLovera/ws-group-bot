@@ -3,3 +3,4 @@ training/data/*.txt
 training/data/*.jsonl
 ws_bot
 .env
+models/*
