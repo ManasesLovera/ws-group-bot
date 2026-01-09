@@ -16,3 +16,21 @@ harddevs-bot/
 │   └── package.json         # Node.js dependencies
 ├── models/                  # Storage for exported GGUF weights
 └── README.md                # You are here
+```
+
+## 🛠️ Prerequisites
+1. Python Environment (Training)
+- **Version**: Python 3.12 or higher.
+- **Manager (Recommended)**: uv (Extremely fast Rust-based manager) or standard venv.
+  - To install uv: curl -LsSf https://astral.sh/uv/install.sh | sh (Unix) or via PowerShell on Windows.
+- **Cloud**: Designed for Google Colab using A100 or L4 GPUs to handle fine-tuning in under 15 minutes.
+
+2. Node.js Environment (Local Bot)
+- **Version**: Node.js 24 LTS.
+- **OS**: WSL2 (Ubuntu 24.04 recommended), Linux, or macOS.
+- **Key Dependencies**: `whatsapp-web.js` (uses Puppeteer for browser emulation).
+
+3. AI Engine (Inference)
+- **Ollama**: The engine for running your local "Brain."
+- **Windows**: Download the official installer from ollama.com.
+- **Linux/WSL**: `curl -fsSL https://ollama.com/install.sh | sh`.
